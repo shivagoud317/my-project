@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-left">
+            <span class="logo">🎓</span>
+            <h1 class="site-name">CampusConnect</h1>
+        </div>
+        <div class="header-center">
+            <h2 class="page-title" id="greeting">Registrations Dashboard</h2>
+        </div>
+        <div class="header-right">
+            <button onclick="window.location.href='admin.html'">Back to Admin</button>
+        </div>
+    </header>
+
+    <!-- REGISTRATIONS VIEW -->
+    <section style="margin: 20px;">
+        <h3>Event Registrations</h3>
+        <div class="registrations-card">
+            <div id="allRegistrationsList" class="grid">
+                Loading registrations...
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="js/registration.js"></script>
+</body>
+
+</html>

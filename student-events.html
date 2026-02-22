@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <span class="logo">🎓</span>
+            <h1 class="site-name">CampusConnect</h1>
+        </div>
+        <div class="header-center">
+            <h2 class="page-title" id="studentEventsTitle">Student Events</h2>
+        </div>
+        <div class="header-right">
+            <button onclick="window.location.href='students.html'">Back to Students</button>
+        </div>
+    </header>
+
+    <section>
+        <div class="registrations-card" style="margin: 20px;">
+            <div id="studentEventsList" class="grid">
+                Loading events...
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="js/student-events.js"></script>
+</body>
+
+</html>

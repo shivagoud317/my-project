@@ -1,0 +1,706 @@
+/* Main site header - all pages */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-header .header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-header .logo {
+  font-size: 26px;
+}
+
+.main-header .site-name {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  color: #3c25eb;
+  margin: 0;
+}
+
+/* Center whole auth layout */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Header alignment - login and register (side-by-side, centered) */
+.login-page .auth-header,
+.register-page .register-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.login-page .auth-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Stylish LOGIN + REGISTER page header (size, color) */
+.login-page .auth-header .site-name,
+.login-page .main-header .site-name,
+.register-page .register-header .site-name {
+  font-size: 44px;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.login-page .auth-header .logo,
+.login-page .main-header .logo,
+.register-page .register-header .logo {
+  height: 52px;
+  width: auto;
+  font-size: 52px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Brand header (logo + title) inside card */
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.brand-header .logo {
+  height: 48px;
+  width: auto;
+  font-size: 48px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-header .site-name,
+.login-page .site-name,
+.register-page .site-name {
+  font-size: 44px;
+  font-weight: 800;
+  color: #2563eb;
+  margin: 0;
+}
+
+/* Logo size for auth pages (emoji or img) */
+.auth-page .logo,
+.auth-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  font-size: 48px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Title styling */
+.auth-page .site-name {
+  font-size: 42px;
+  font-weight: 800;
+  color: #2563eb;
+  margin: 0;
+  transition: all 0.4s ease;
+}
+
+/* Auth container */
+.auth-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+/* Floating Glass Card */
+.auth-card {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.15),
+    0 0 0 1px rgba(255,255,255,0.2) inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Floating effect */
+.auth-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.2);
+}
+
+/* Modern inputs */
+.auth-card input,
+.auth-card select {
+  background: rgba(255,255,255,0.6);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+/* Focus glow */
+.auth-card input:focus,
+.auth-card select:focus {
+  outline: none;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.3);
+}
+
+/* Professional button */
+.auth-card button {
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37,99,235,0.4);
+}
+
+/* Card heading */
+.auth-card h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #1e293b;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Card paragraph */
+.auth-card p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+.main-header .header-center {
+  text-align: center;
+  flex: 1;
+}
+
+.main-header .page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.main-header .header-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #e0f2fe 0%,
+    #dbeafe 40%,
+    #f0f9ff 100%
+  );
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.auth-box {
+  width: 300px;
+  margin: 80px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 15px;
+}
+
+.auth-box input,
+.auth-box select {
+  width: 100%;
+  padding: 7px;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #e0f2fe 0%,
+        #dbeafe 40%,
+        #f0f9ff 100%
+    );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    -webkit-font-smoothing: antialiased;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.auth-box button:hover {
+  background: #0056b3;
+}
+
+.auth-box a {
+  font-size: 13px;
+}
+.events-btn {
+  padding: 10px 20px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Smooth page feel */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Glass effect for containers and cards */
+.container,
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* ===== LOGIN PAGE GLASSMORPHISM STYLES ===== */
+.login-page {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  margin-top: 0 !important;
+}
+
+/* Soft overlay blur layer for depth */
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(224, 242, 254, 0.5) 0%,
+    rgba(219, 234, 254, 0.3) 50%,
+    rgba(240, 249, 255, 0.5) 100%
+  );
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.login-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Minimal transparent header on login page */
+.login-page .main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page .main-header .site-name {
+  color: rgba(37, 99, 235, 0.9);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Floating header (ONLY logo + title) - Register page - same background as login */
+.register-page .register-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.register-page .register-header .logo {
+  height: 52px;
+  width: auto;
+  font-size: 52px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-page .register-header .site-name {
+  font-size: 44px;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* Push form below fixed header */
+.register-page .register-container {
+  margin-top: 110px;
+}
+
+/* Register page layout */
+.register-page {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  margin-top: 0 !important;
+}
+
+.register-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(224, 242, 254, 0.5) 0%,
+    rgba(219, 234, 254, 0.3) 50%,
+    rgba(240, 249, 255, 0.5) 100%
+  );
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.register-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Login and Register form glassmorphism card */
+.login-page form,
+.register-page form {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Login and Register heading */
+.login-page > h2,
+.register-page > h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 2;
+  letter-spacing: -0.5px;
+}
+
+/* Modern input fields */
+.login-page form input,
+.register-page form input {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  color: #1e293b;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    inset 0 1px 3px rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+}
+
+.login-page form input::placeholder,
+.register-page form input::placeholder {
+  color: rgba(30, 41, 59, 0.45);
+  font-weight: 400;
+}
+
+.login-page form input:focus,
+.register-page form input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(37, 99, 235, 0.6);
+  box-shadow: 
+    0 6px 20px rgba(37, 99, 235, 0.18),
+    inset 0 1px 3px rgba(255, 255, 255, 0.8),
+    0 0 0 4px rgba(37, 99, 235, 0.12);
+  transform: translateY(-2px);
+}
+
+.login-page form input:hover:not(:focus),
+.register-page form input:hover:not(:focus) {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    inset 0 1px 3px rgba(255, 255, 255, 0.65);
+}
+
+/* Select element styling to match inputs */
+.login-page form select,
+.register-page form select {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  color: #1e293b;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    inset 0 1px 3px rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.login-page form select:focus,
+.register-page form select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(37, 99, 235, 0.6);
+  box-shadow: 
+    0 6px 20px rgba(37, 99, 235, 0.18),
+    inset 0 1px 3px rgba(255, 255, 255, 0.8),
+    0 0 0 4px rgba(37, 99, 235, 0.12);
+  transform: translateY(-2px);
+}
+
+.login-page form select:hover:not(:focus),
+.register-page form select:hover:not(:focus) {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    inset 0 1px 3px rgba(255, 255, 255, 0.65);
+}
+
+/* Professional gradient button (login and register) */
+.login-page form button,
+.register-page form button {
+  width: 100%;
+  padding: 16px 24px;
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 6px 16px rgba(37, 99, 235, 0.35),
+    0 2px 6px rgba(37, 99, 235, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  text-transform: none;
+  letter-spacing: 0.4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-page form button::before,
+.register-page form button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.login-page form button:hover,
+.register-page form button:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 50%, #1e3a8a 100%);
+  box-shadow: 
+    0 8px 24px rgba(37, 99, 235, 0.45),
+    0 4px 8px rgba(37, 99, 235, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transform: translateY(-3px);
+}
+
+.login-page form button:hover::before,
+.register-page form button:hover::before {
+  left: 100%;
+}
+
+.login-page form button:active,
+.register-page form button:active {
+  transform: translateY(-1px);
+  box-shadow: 
+    0 4px 12px rgba(37, 99, 235, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Link styling */
+.login-page form p,
+.register-page form p {
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 0;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.login-page form a,
+.register-page form a {
+  color: #2563eb !important;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+.login-page form a:hover,
+.register-page form a:hover {
+  color: #1d4ed8 !important;
+  border-bottom-color: #1d4ed8;
+  transform: translateY(-1px);
+}

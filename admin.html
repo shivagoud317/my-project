@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CampusConnect</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="header-left">
+      <span class="logo">🎓</span>
+      <h1 class="site-name">CampusConnect</h1>
+    </div>
+    <div class="header-center">
+      <h2 class="page-title" id="greeting">Admin Dashboard</h2>
+    </div>
+    <div class="header-right">
+      <p id="adminEmail"></p>
+      <button onclick="goToEvents()">Events</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <!-- DASHBOARD COUNTS -->
+  <section class="stats">
+    <div>Total Events: <span id="totalEvents">0</span></div>
+    <div>Upcoming: <span id="upcomingEvents">0</span></div>
+    <div>Completed: <span id="completedEvents">0</span></div>
+    <div>Cancelled: <span id="cancelledEvents">0</span></div>
+  </section>
+
+  <!-- CREATE EVENT -->
+  <section class="create-event">
+    <h3>Create Event</h3>
+    <input id="eventName" placeholder="Event Name" />
+    <input id="eventDate" type="date" />
+    <input id="eventTime" type="time" />
+    <input id="eventLocation" placeholder="Location" />
+    <textarea id="eventAbout" placeholder="About Event" rows="3"
+      style="width:100%; padding:10px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;"></textarea>
+    <button id="createEventBtn">Create Event</button>
+  </section>
+
+  <!-- EVENTS LIST -->
+  <section>
+    <h3>All Events</h3>
+    <div id="eventsList"></div>
+  </section>
+
+
+  <!-- EVENT DETAILS / REGISTRATIONS MODAL -->
+  <div id="eventModalBackdrop" class="modal-backdrop" style="display:none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="eventModalTitle"></h3>
+        <button onclick="closeEventModal()">×</button>
+      </div>
+      <div id="eventModalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+  <script src="js/logout.js"></script>
+</body>
+
+</html>

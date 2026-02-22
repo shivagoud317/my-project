@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CampusConnect</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="header-left">
+      <span class="logo">🎓</span>
+      <h1 class="site-name">CampusConnect</h1>
+    </div>
+    <div class="header-center">
+      <h2 class="page-title" id="greeting">Faculty Dashboard</h2>
+    </div>
+    <div class="header-right">
+      <p id="facultyEmail"></p>
+      <button onclick="goToEvents()">Events</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <section>
+    <div id="todayAttendanceList"></div>
+  </section>
+
+  <section>
+    <h3>My Allocated Students</h3>
+    <button class="btn-students-action" onclick="window.location.href='students.html'">
+      Students
+    </button>
+  </section>
+
+  <section>
+    <h3>All Events</h3>
+    <div id="eventsList" class="grid"></div>
+  </section>
+  <section>
+    <h3>Registration Status</h3>
+    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+      <button onclick="window.location.href='pending.html'"
+        style="padding:10px 20px; font-size:16px; background-color:#f59e0b; color:white; border:none; border-radius:4px;">
+        Pending Registrations
+      </button>
+      <button onclick="window.location.href='approved.html'"
+        style="padding:10px 20px; font-size:16px; background-color:#10b981; color:white; border:none; border-radius:4px;">
+        Approved Registrations
+      </button>
+      <button onclick="window.location.href='rejected.html'"
+        style="padding:10px 20px; font-size:16px; background-color:#ef4444; color:white; border:none; border-radius:4px;">
+        Rejected Registrations
+      </button>
+    </div>
+  </section>
+
+  <script type="module" src="js/faculty.js"></script>
+
+
+
+</body>
+
+</html>

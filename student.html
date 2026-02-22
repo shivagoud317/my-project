@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CampusConnect</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="main-header">
+    <div class="header-left">
+      <span class="logo">🎓</span>
+      <h1 class="site-name">CampusConnect</h1>
+    </div>
+    <div class="header-center">
+      <h2 class="page-title" id="headerGreeting">Student Dashboard</h2>
+    </div>
+    <div class="header-right">
+      <p id="studentEmail"></p>
+      <button type="button" id="loadEventsBtn">Events</button>
+      <button type="button" id="logoutBtn" style="background:#ef4444; color:white;">Logout</button>
+    </div>
+  </header>
+
+  <!-- ================= MENTOR INFORMATION ================= -->
+  <section class="create-event" style="margin-bottom: 25px;">
+    <h3>Mentor Information</h3>
+    <div id="mentorInfoCard" class="event-card">
+      <p id="mentorNameLine">Loading mentor data...</p>
+      <p id="mentorEmailLine" style="display:none;"></p>
+      <p id="mentorIdLine" style="display:none;"></p>
+    </div>
+  </section>
+
+  <!-- ================= EVENTS ================= -->
+  <section class="create-event" style="margin-bottom: 25px;">
+    <h3>Dashboard Events</h3>
+    <div id="dashboardEventsList" class="grid"></div>
+  </section>
+
+  <!-- ================= NOTIFICATIONS ================= -->
+  <section class="create-event" style="margin-bottom: 25px;">
+    <h3>Notifications</h3>
+    <div id="notificationsList" class="grid">
+      <p>Loading notifications...</p>
+    </div>
+  </section>
+
+  <!-- ================= EVENT MODAL ================= -->
+  <div id="eventModalBackdrop" class="modal-backdrop" style="display:none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="eventModalTitle"></h3>
+        <button id="closeModalBtn" onclick="closeEventModal()">×</button>
+      </div>
+      <div id="eventModalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script type="module" src="js/student.js"></script>
+
+</body>
+
+</html>

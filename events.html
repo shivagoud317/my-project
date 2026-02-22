@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CampusConnect</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/events.css">
+
+  <!-- Firebase Events Logic -->
+  <script type="module" src="js/events.js"></script>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="header-left">
+      <span class="logo">🎓</span>
+      <h1 class="site-name">CampusConnect</h1>
+    </div>
+    <div class="header-center">
+      <h2 class="page-title">All Events</h2>
+    </div>
+    <div class="header-right">
+      <button onclick="goBack()">⬅ Back</button>
+    </div>
+  </header>
+
+  <div id="eventsContainer"></div>
+
+  <p id="emptyMsg" class="empty" style="display:none;">
+    No events available
+  </p>
+
+  <script>
+    function goBack() {
+      history.back();
+    }
+  </script>
+
+</body>
+</html>

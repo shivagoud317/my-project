@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CampusConnect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="register-page">
+  <div class="register-header">
+    <span class="logo">🎓</span>
+    <h1 class="site-name">CampusConnect</h1>
+  </div>
+  <div class="register-container">
+    <div class="auth-container">
+      <div class="auth-card">
+        <h2>Create Account</h2>
+        <form>
+          <!-- Full Name -->
+          <input
+            type="text"
+            id="fullName"
+            placeholder="Full Name"
+            required
+          />
+
+          <!-- College / User ID -->
+          <input
+            type="text"
+            id="userId"
+            placeholder="College ID / User ID"
+            required
+          />
+
+          <!-- Phone Number -->
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required
+          />
+
+          <!-- Email -->
+          <input
+            type="email"
+            id="regEmail"
+            placeholder="Email"
+            required
+          />
+
+          <!-- Password -->
+          <input
+            type="password"
+            id="regPassword"
+            placeholder="Password"
+            required
+          />
+
+          <!-- Role -->
+          <select id="role" required>
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+            <option value="admin">Admin</option>
+          </select>
+
+          <!-- Mentor (for Students) -->
+          <input
+            type="text"
+            id="mentorName"
+            placeholder="Mentor Name (for students)"
+          />
+          <input
+            type="email"
+            id="mentorEmail"
+            placeholder="Mentor Email (for students)"
+          />
+
+          <!-- Register Button -->
+          <button id="registerBtn">Register</button>
+
+        <p>
+          Already have an account?
+          <a href="index.html">Login</a>
+        </p>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTH SCRIPT -->
+  <script type="module" src="js/auth.js"></script>
+  <script>
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 40) {
+        document.body.classList.add("show-title");
+      } else {
+        document.body.classList.remove("show-title");
+      }
+    });
+  </script>
+</body>
+</html>
